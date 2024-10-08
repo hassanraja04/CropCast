@@ -6,11 +6,15 @@ const MainDescription = ({data}) => {
     return (
         <div className='flex-row-maindescription'>
             {/* Ensures all data is in one place and can be formatted in the right way */}
-            <span className='mainweather-description'>{capitalise(data.weatherData.weather[0].description)}</span>
-            <div className='mainweather-icon' style={{
-              backgroundImage: `url(${getWeatherIcon(data.weatherData.weather[0].icon)})`}}/> {/*Main image is this*/}
-            <span className='mainweather-temp'>{Math.round(data.weatherData.main.temp)}°</span>
-            {changeBackground(data.weatherData.weather[0].icon)}
+            <div className="weather-desc">
+                <span className='mainweather-description'>{capitalise(data.weatherData.weather[0].description)}</span>
+            </div>
+            <div className="weather-det">
+                <div className='mainweather-icon' style={{
+                backgroundImage: `url(${getWeatherIcon(data.weatherData.weather[0].icon)})`}}/> {/*Main image is this*/}
+                <span className='mainweather-temp'>{Math.round(data.weatherData.main.temp)}°</span>
+                {changeBackground(data.weatherData.weather[0].icon)}
+            </div>
         </div>
     );
 };

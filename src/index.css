@@ -2915,3 +2915,159 @@ button {
   letter-spacing: calc(0.11 * var(--rpx)); 
   z-index: 32; 
 }
+
+/* Media query for responsiveness */
+@media (max-width: 500px) {
+  /* Adjust main container */
+  .main-container {
+    width: 100%; 
+    /* padding: 0 10px; */
+    box-shadow: none;
+  }
+
+  .initial-screen p {
+    text-align: center;
+  }
+
+  .searchbar,.functional-screen{
+    display: flex;
+    align-items: row;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .flex-row-city {
+    width: 100%;
+    height: 100%;
+  }
+
+  .city {
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .flex-row-maindescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Spread out the content */
+    align-items: center; /* Vertically align the items */
+    width: 100%;
+    min-height: 150px; /* Ensures a consistent height */
+    gap: 20px; /* Adjust gap between weather description and details */
+    
+  }
+  
+  .weather-desc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 30px;
+    width: 100%;
+  }
+  .weather-det {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .mainweather-description {
+    width: fit-content;
+  }
+  .mainweather-icon {
+    height: 150px;
+    width: 150px;
+  }
+  .mainweather-temp {
+    font-size: 90px;
+    height: fit-content;
+    width: fit-content;
+  }
+  /* .mainweather-description, .mainweather-icon, .mainweather-temp {
+    height: 100%;
+    width: 100%;
+  } */
+  
+  /* .city {
+    font-size: 24px; 
+    height: auto;
+    line-height: 1.2;
+  }
+
+  
+  .mainweather-icon {
+    width: 80px; 
+    height: 80px;
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+
+  
+  .mainweather-temp {
+    font-size: 48px;
+    width: auto;
+  }
+
+  
+  .minmaxTemp, .temperature-high, .temperature-low {
+    font-size: 16px; 
+  }
+
+  
+  .flex-row-city, .flex-row-maindescription, .flex-rowpictures, .flex-row-hourly, .flex-row-farmadvice, .flex-row-mainweatherextra, .flex-row-rainhumidity, .flex-row-windairquality, .flex-row-7day, .flex-row-severeweather, .flex-row-historical {
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+  }
+
+  
+  .searchbar input[type="text"] {
+    width: 100%; 
+    font-size: 16px; 
+    padding: 15px;
+  }
+
+  
+  .searchbar button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  
+  .flex-row-farmadvice {
+    width: 100%; 
+    height: auto; 
+  }
+
+  
+  .historical-data-box {
+    width: 100%; 
+    height: auto; 
+  }
+
+  
+  .flex-row-7day {
+    width: 100%;
+    height: auto;
+  }
+
+  .temp-high-0, .temp-low-0, .temp-high-1, .temp-low-1, .temp-high-2, .temp-low-2, .temp-high-3, .temp-low-3, .temp-high-4, .temp-low-4, .temp-high-5, .temp-low-5, .temp-high-6, .temp-low-6, .temp-high-7, .temp-low-7 {
+    font-size: 16px; 
+  }
+
+  
+  .visibility, .wind, .air-quality, .gusts {
+    font-size: 14px;
+  }
+
+  
+  .severe-alert {
+    font-size: 18px; 
+  } */
+}
